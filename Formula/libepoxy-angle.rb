@@ -13,7 +13,7 @@ class LibepoxyAngle < Formula
 
   # waiting for upstreaming of https://github.com/akihikodaki/libepoxy/tree/macos
   patch :p1 do
-    url "https://raw.githubusercontent.com/knazarov/homebrew-qemu-virgl/8bab5791b5af446204dea93d36943e00329032bf/Patches/libepoxy-v02.diff"
+    url "https://raw.githubusercontent.com/gneissguise/homebrew-qemu-virgl/master/Patches/libepoxy-v02.diff"
     sha256 "8ce3a33be6ccab5482e77261d0ca98d0a6aeff9d6dfc32b0e75cd323f87dccee"
   end
 
