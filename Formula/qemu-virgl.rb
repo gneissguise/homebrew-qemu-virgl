@@ -35,7 +35,7 @@ class QemuVirgl < Formula
 
   # waiting for upstreaming of https://github.com/akihikodaki/qemu/tree/macos
   patch :p1 do
-    url "https://raw.githubusercontent.com/knazarov/homebrew-qemu-virgl/87072b7ccc07f5087bf0848fa8920f8b3f8d5a47/Patches/qemu-v05.diff"
+    url "https://github.com/gneissguise/homebrew-qemu-virgl/blob/master/Patches/qemu-v05.diff"
     sha256 "6d27699ba454b5ecb7411822a745b89dce3dea5fccabfb56c84ad698f3222dd4"
   end
 
