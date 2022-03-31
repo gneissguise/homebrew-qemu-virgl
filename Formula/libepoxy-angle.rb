@@ -9,7 +9,7 @@ class LibepoxyAngle < Formula
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build
   depends_on "python@3.9" => :build
-  depends_on "knazarov/qemu-virgl/libangle"
+  depends_on "gneissguise/qemu-virgl/libangle"
 
   # waiting for upstreaming of https://github.com/akihikodaki/libepoxy/tree/macos
   patch :p1 do
