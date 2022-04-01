@@ -14,7 +14,7 @@ class Virglrenderer < Formula
   # waiting for upstreaming of https://github.com/akihikodaki/virglrenderer/tree/macos
   patch :p1 do
     url "https://raw.githubusercontent.com/gneissguise/homebrew-qemu-virgl/master/Patches/virglrenderer-v04.diff"
-    sha256 "053d7325510feb8f501e646018e9bed9a626a3825374fe11387e4c14e21a6b31"
+    sha256 "cb9e2ea4d73cd99375bd9fc9a008f4d7e53249a6259d63ff8f367a08c4fd8b9c"
   end
 
   def install
