@@ -82,8 +82,6 @@ class QemuVirgl < Formula
     # Samba installations from external taps.
     args << "--smbd=#{HOMEBREW_PREFIX}/sbin/samba-dot-org-smbd"
 
-    args << "--enable-cocoa" if OS.mac?
-
     system "./configure", *args
     system "make", "V=1", "install"
   end
