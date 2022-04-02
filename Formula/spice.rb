@@ -35,6 +35,7 @@ class Spice < Formula
   depends_on "pixman"
   depends_on "spice-protocol"
   depends_on "usbredir"
+  depends_on "zlib"
 
   def install
     system "./autogen.sh"
