@@ -29,9 +29,8 @@ class QemuVirgl < Formula
   depends_on "nettle"
   depends_on "pcsc-lite"
   depends_on "pixman"
-  depends_on "sdl2"
   depends_on "snappy"
-  depends_on "spice-protocol"
+  depends_on "gneissguise/qemu-virgl/spice"
   depends_on "usbredir"
   depends_on "vde"
 
@@ -60,16 +59,21 @@ class QemuVirgl < Formula
       --enable-libssh
       --enable-vde
       --extra-cflags=-DNCURSES_WIDECHAR=1
+      --enable-cocoa
       --extra-cflags=-I#{Formula["libangle"].opt_prefix}/include
       --extra-cflags=-I#{Formula["libepoxy-angle"].opt_prefix}/include
       --extra-cflags=-I#{Formula["virglrenderer"].opt_prefix}/include
-      --extra-cflags=-I#{Formula["spice-protocol"].opt_prefix}/include/spice-1
+      --extra-cflags=-I#{Formula["spice"].opt_prefix}/include
       --extra-ldflags=-L#{Formula["libangle"].opt_prefix}/lib
       --extra-ldflags=-L#{Formula["libepoxy-angle"].opt_prefix}/lib
       --extra-ldflags=-L#{Formula["virglrenderer"].opt_prefix}/lib
-      --extra-ldflags=-L#{Formula["spice-protocol"].opt_prefix}/lib
+      --extra-ldflags=-L#{Formula["spice"].opt_prefix}/lib
       --disable-sdl
       --disable-gtk
+      --enable-spice
+      --enable-vnc
+      --enable-vnc-jpeg
+      --enable-vnc-png
     ]
     # Sharing Samba directories in QEMU requires the samba.org smbd which is
     # incompatible with the macOS-provided version. This will lead to
