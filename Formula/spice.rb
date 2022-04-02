@@ -1,7 +1,7 @@
 class Spice < Formula
   homepage "https://www.spice-space.org/"
-  url "https://gitlab.freedesktop.org/spice/spice.git"
-  version "master"
+  url "https://www.spice-space.org/download/releases/spice-server/spice-0.14.3.tar.bz2"
+  sha256 "1ea14f53f3a2c06868de4fbab651574db65bf0c04139a6d84815ac3e0cab996d"
 
   depends_on "autoconf" => :build
   depends_on "autoconf-archive" => :build
