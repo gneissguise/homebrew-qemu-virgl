@@ -1,6 +1,6 @@
 class Spice < Formula
   homepage "https://www.spice-space.org/"
-  url "https://www.spice-space.org/download/releases/spice-server/spice-0.14.91.tar.bz2"
+  url "https://www.spice-space.org/download/releases/spice-0.14.91.tar.bz2"
   sha256 "d29acdfe56a09a4f68ddb11e1be27029d478dd863c80245a02e2eaae54afa10f"
 
   depends_on "autoconf" => :build
