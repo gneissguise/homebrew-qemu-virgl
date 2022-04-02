@@ -29,7 +29,7 @@ class QemuVirgl < Formula
   depends_on "usbredir"
   depends_on "vde"
   depends_on "spice-protocol"
-  depends_on "spice-server"
+  # depends_on "spice-server"
 
   # 820KB floppy disk image file of FreeDOS 1.2, used to test QEMU
   resource "test-image" do
