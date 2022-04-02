@@ -29,6 +29,7 @@ class QemuVirgl < Formula
   depends_on "usbredir"
   depends_on "vde"
   depends_on "spice-protocol"
+  depends_on "spice-server"
 
   # 820KB floppy disk image file of FreeDOS 1.2, used to test QEMU
   resource "test-image" do
@@ -59,11 +60,9 @@ class QemuVirgl < Formula
       --extra-cflags=-I#{Formula["libangle"].opt_prefix}/include
       --extra-cflags=-I#{Formula["libepoxy-angle"].opt_prefix}/include
       --extra-cflags=-I#{Formula["virglrenderer"].opt_prefix}/include
-      --extra-cflags=-I#{Formula["spice"].opt_prefix}/include
       --extra-ldflags=-L#{Formula["libangle"].opt_prefix}/lib
       --extra-ldflags=-L#{Formula["libepoxy-angle"].opt_prefix}/lib
       --extra-ldflags=-L#{Formula["virglrenderer"].opt_prefix}/lib
-      --extra-ldflags=-L#{Formula["spice"].opt_prefix}/lib
       --disable-sdl
       --disable-gtk
       --enable-spice
