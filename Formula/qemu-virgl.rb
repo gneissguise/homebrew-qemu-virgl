@@ -18,7 +18,6 @@ class QemuVirgl < Formula
   depends_on "gneissguise/qemu-virgl/virglrenderer"
   depends_on "libvirt-glib"
   depends_on "libvirt"
-  depends_on "libvirt-python"
   depends_on "libpng"
   depends_on "libssh"
   depends_on "libusb"
